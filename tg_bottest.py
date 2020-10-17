@@ -109,7 +109,7 @@ def delete(bot, update):
     bot.delete_message(chat_id=-1001328727045,
                            message_id=update.message.message_id)
 
-updater = Updater('932777104:AAEdosIzLAgPzXA24v01-L6BGsFK282L4Jo')
+updater = Updater(os.environ.get("BOT_TOKEN"))
 with open('tibam_conf.txt', 'r') as f:
     for x in f:
         tibam_arr.append(x)
